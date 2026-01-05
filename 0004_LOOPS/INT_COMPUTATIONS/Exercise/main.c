@@ -11,7 +11,17 @@ int main()
     // sum of digits
     uint32_t numDigits = 0;
 
-    // CODE HERE //
+    // CODE Here //
+    uint32_t tempNumber = inputNumber;
+
+    while (tempNumber)
+    {
+        numDigits++;
+        tempNumber /= 10;
+    }
+    
+
+
 
     printf("sum of digits: %u\n", numDigits);
 
@@ -19,6 +29,14 @@ int main()
     uint32_t crossSum = 0;
     
     // CODE HERE //
+    tempNumber = inputNumber;
+
+    for (size_t i = 0; i < (size_t)numDigits; i++)
+    {
+        crossSum += tempNumber % 10;
+        tempNumber /= 10;
+    }
+    
 
     printf("crossSum: %u\n", crossSum);
 

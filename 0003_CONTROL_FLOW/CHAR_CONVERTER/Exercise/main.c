@@ -8,6 +8,9 @@ int main()
     printf("Please enter any ASCII character: ");
     scanf("%c", &character);
 
+    printf("%c", character);
+    printf("Hallo");
+
     // is numeric
 
     // is upper case
